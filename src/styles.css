@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 0, 0%, 98%;
+		--popover: 0 0% 100%;
+		--popover-foreground: 240 10% 3.9%;
+		--muted: 240 4.8% 94.9%;
+		--muted-foreground: 240 3.8% 46.1%;
+		--accent: 240 4.8% 95.9%;
+		--accent-foreground: 240 5.9% 10%;
+		--ring: 215 20.2% 65.1%;
+	}
+
+	.dark {
+		--background: 0, 0%, 9%;
+		--popover: 240 10% 3.9%;
+		--popover-foreground: 0 0% 98%;
+		--muted: 240 3.7% 15.9%;
+		--muted-foreground: 240 5% 64.9%;
+		--accent: 240 3.7% 15.9%;
+		--accent-foreground: 0 0% 98%;
+		--ring: 215 20.2% 65.1%;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-solid border-muted;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		min-width: 0;
+		/* outline: 0.3px red solid; */
+		/* font-family: "Inter", sans-serif; */
+	}
+	body {
+		@apply bg-background font-noto leading-6 tracking-wide text-neutral-500 dark:text-neutral-300;
+		min-height: 100dvh;
+	}
+	h1,
+	h2,
+	h3,
+	h4 {
+		text-wrap: balance;
+	}
+	p {
+		text-wrap: pretty;
+	}
+}
+
+
+/* LOGO IMAGE GLOW AND SPIN */
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+} */
