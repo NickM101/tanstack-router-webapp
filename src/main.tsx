@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import App from './App'
+import App from './App';
+import './index.css';
 
 const rootElement = document.getElementById('app')!
 
@@ -10,6 +11,6 @@ if (!rootElement.innerHTML) {
   root.render(
     <React.StrictMode>
       <App />
-    </React.StrictMode>,
+    </React.StrictMode>
   )
 }

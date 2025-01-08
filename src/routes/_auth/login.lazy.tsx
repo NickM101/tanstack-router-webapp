@@ -48,7 +48,7 @@ function LoginPage() {
       {error && <p className="text-red-500">{error}</p>}
       <button
         type="submit"
-        className="w-full p-2 bg-blue-500 text-white rounded"
+        className="w-full p-2 bg-green-500 text-white rounded"
       >
         Login
       </button>
